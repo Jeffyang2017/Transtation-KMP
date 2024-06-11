@@ -187,8 +187,8 @@ internal fun MainPartNormal(
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     MainTopBarNormal(showDrawerAction = openDrawerAction)
-                    Notice(Modifier.fillMaxWidth(0.9f))
-                    Spacer(modifier = Modifier.height(8.dp))
+                    //Notice(Modifier.fillMaxWidth(0.9f))
+                   // Spacer(modifier = Modifier.height(8.dp))
                     HintText(
                         onClick = { vm.updateMainScreenState(MainScreenState.Inputting) },
                         onLongClick = vm::tryToPasteAndTranslate

@@ -70,6 +70,8 @@ class MainViewModel : ViewModel() {
 
     var sourceLanguage by mutableDataSaverStateOf(DataSaverUtils, "key_source_lang", Language.ENGLISH)
     var targetLanguage by mutableDataSaverStateOf(DataSaverUtils, "key_target_lang", Language.CHINESE)
+    //增加第二个目标：德语
+    var targetLanguage2 by mutableDataSaverStateOf(DataSaverUtils, "key_target_lang", Language.GERMANY)
     val resultList = mutableStateListOf<TranslationResult>()
     var startedProgress by mutableFloatStateOf(1f)
     var finishedProgress by mutableFloatStateOf(1f)

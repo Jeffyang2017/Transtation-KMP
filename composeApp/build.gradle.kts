@@ -48,6 +48,9 @@ kotlin {
 
             // 应用更新
             implementation("com.github.azhon:AppUpdate:3.0.6")
+            // 应用更新
+            //implementation("io.github.azhon:appupdate:4.3.2")
+
         }
 
         val desktopMain by getting {
@@ -170,7 +173,7 @@ compose.desktop {
         // 下面的注释是我踩的坑
         // 这个 MainClass 一定要写到类全名，如果有包名一定要写全，否则打包后会找不到入口，运行直接无效果
         mainClass = "MainKt"
-        javaHome = "D:/Environment/jdk17"
+        //javaHome = "D:/Program Files/Java/jdk-17/Java"
 
         val now = System.currentTimeMillis()
 

@@ -7,6 +7,7 @@ import com.funny.translation.AppConfig
 import com.funny.translation.helper.JSONObjectSerializer
 import com.funny.translation.helper.JsonX
 import com.funny.translation.helper.LocaleUtils
+import com.funny.translation.helper.Log
 import com.funny.translation.helper.getLanguageCode
 import com.funny.translation.helper.toastOnUi
 import com.funny.translation.kmp.appCtx
@@ -93,6 +94,8 @@ interface AIService {
 val aiService by lazy {
     ServiceCreator.create(AIService::class.java)
 }
+
+
 
 suspend fun AIService.askAndParseStream(req: AskStreamRequest): Flow<StreamMessage> {
     return askStream(req).asFlow().asStreamMessageFlow()

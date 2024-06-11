@@ -479,13 +479,12 @@ private fun Drawer(
                 }
             }
             drawerItem(Icons.Default.PictureInPicture, TranslateScreen.FloatWindowScreen)
-            divider()
+/*            divider()
             drawerItem(Icons.Default.Info, TranslateScreen.AboutScreen)
             drawerItem(Icons.Default.Favorite, TranslateScreen.ThanksScreen)
             divider()
             drawerItem(Icons.Default.Apps, TranslateScreen.AppRecommendationScreen)
-            drawerItem(Icons.Default.Redeem, TranslateScreen.AnnualReportScreen)
-
+            drawerItem(Icons.Default.Redeem, TranslateScreen.AnnualReportScreen)*/
             Spacer(modifier = Modifier.height(16.dp))
             Spacer(Modifier.windowInsetsTopHeight(WindowInsets.safeMain))
         }

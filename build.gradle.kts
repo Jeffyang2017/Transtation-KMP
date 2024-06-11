@@ -13,6 +13,9 @@ plugins {
 
 allprojects {
     repositories {
+
+
+        gradlePluginPortal()
         mavenCentral()
         google()
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev/")
@@ -21,7 +24,7 @@ allprojects {
         maven { url = uri("https://maven.aliyun.com/repository/public/") }
         maven { url = uri("https://maven.aliyun.com/repository/google/") }
         maven { url = uri("https://maven.aliyun.com/repository/jcenter/") }
-        maven { url = uri("https://jitpack.io") }
+        maven { url = uri("https://www.jitpack.io") }
         maven("https://jogamp.org/deployment/maven")
     }
 }

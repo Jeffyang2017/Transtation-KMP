@@ -1,5 +1,6 @@
 
 import org.jetbrains.compose.ExperimentalComposeLibrary
+import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import java.io.ByteArrayOutputStream
 import java.util.Locale
 
@@ -117,6 +118,7 @@ kotlin {
         }
 
         val desktopMain by getting {
+
             kotlin.srcDir("src/desktopMain/java")
             dependencies {
                 api(compose.desktop.currentOs)
